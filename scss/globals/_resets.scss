@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   min-height: 100vh;
+   align-content: center;
+   background-color: var(--color-accent-1);
+}
+
+fieldset {
+   border: none;
+}
+
+li:has(input[type="radio"]) {
+   list-style-type: none;
+}
+
+label {
+   position: relative;
+}
+
+label input[type="radio"] {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   height: 0;
+   width: 0;
+   pointer-events: none;
+}
+
+button {
+   font: inherit;
+   width: 100%;
+}
+
+span {
+   display: inline-block;
+   height: 1rem;
+   //line-height: 0.7rem;
+}

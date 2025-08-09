@@ -1,0 +1,27 @@
+@forward "rating";
+@forward "success";
+@use "../utils" as *;
+
+main {
+   margin-inline: var(--spacing-md-2);
+}
+
+.rating,
+.success {
+   gap: var(--spacing-md-2);
+
+   border-radius: 1rem;
+   margin-inline: auto;
+   padding: var(--spacing-md-2);
+
+   min-height: 25rem;
+   max-width: 24.5rem;
+
+   background-color: var(--color-accent-2);
+}
+
+@include breakpoint("mobile-sm") {
+   .rating {
+      padding-inline: var(--spacing-lg-1);
+   }
+}

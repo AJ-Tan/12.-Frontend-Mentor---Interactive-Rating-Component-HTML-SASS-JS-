@@ -1,0 +1,27 @@
+.success {
+   align-items: center;
+   text-align: center;
+
+   &__header,
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md-1);
+   }
+
+   &__header-text {
+      border-radius: 1rem;
+      padding: var(--spacing-sm-2) var(--spacing-md-1);
+
+      background-color: var(--color-neutral-2-01);
+      color: var(--color-primary);
+
+      // text-box-edge: cap alphabetic;
+      // text-box-trim: trim-both;
+
+      box-sizing: unset;
+      display: inline-block;
+      line-height: 1rem;
+      height: 0.7rem;
+   }
+}

@@ -1,0 +1,39 @@
+html {
+   font-family: "Overpass", Helvetica, sans-serif;
+   color: var(--color-neutral-1);
+   font-size: 0.9375rem;
+}
+
+h2,
+h3 {
+   font-weight: 500;
+   //1.65rem mobile 37
+   //font-size: 1.8rem;
+   font-size: clamp(1.65rem, 6.6vw, 1.8rem);
+}
+
+p,
+label {
+   color: var(--color-neutral-2);
+}
+
+label {
+   display: flex;
+   flex-direction: column;
+}
+
+p {
+   font-size: 0.95rem;
+}
+
+button {
+   color: var(--color-accent-2);
+}
+
+label:has(input[type="radio"]) {
+   font-weight: 600;
+}
+
+button[type="submit"] {
+   font-weight: 800;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="dist/style.css" />
+
+      <script type="module" src="./js/index.js"></script>
+
+      <title>Frontend Mentor | Interactive rating component</title>
+   </head>
+   <body>
+      <!-- Rating state start -->
+      <main>
+         <form class="rating active">
+            <div class="rating__image-wrapper">
+               <img
+                  src="./images/icon-star.svg"
+                  alt="Orange star represents rating."
+                  aria-hidden="true"
+                  class="rating__header-image"
+               />
+            </div>
+            <header class="rating__header">
+               <h2 class="rating__header-title">How did we do?</h2>
+               <p class="rating__header-paragraph">
+                  Please let us know how we did with your support request. All
+                  feedback is appreciated to help us improve our offering!
+               </p>
+            </header>
+
+            <fieldset class="rating__fieldset">
+               <legend class="visually-hidden">
+                  Rate your experience from 1 to 5
+               </legend>
+               <ul class="rating__list">
+                  <li class="rating__item">
+                     <label class="rating__option">
+                        <input type="radio" name="rating-option" value="1" />
+                        <span>1</span>
+                     </label>
+                  </li>
+                  <li class="rating__item">
+                     <label class="rating__option">
+                        <input type="radio" name="rating-option" value="2" />
+                        <span>2</span>
+                     </label>
+                  </li>
+                  <li class="rating__item">
+                     <label class="rating__option">
+                        <input type="radio" name="rating-option" value="3" />
+                        <span>3</span>
+                     </label>
+                  </li>
+                  <li class="rating__item">
+                     <label class="rating__option">
+                        <input type="radio" name="rating-option" value="4" />
+                        <span>4</span>
+                     </label>
+                  </li>
+                  <li class="rating__item">
+                     <label class="rating__option">
+                        <input type="radio" name="rating-option" value="5" />
+                        <span>5</span>
+                     </label>
+                  </li>
+               </ul>
+            </fieldset>
+            <button type="submit" class="rating__submit">SUBMIT</button>
+         </form>
+
+         <section class="success hidden" aria-labelledby="success-title">
+            <header class="success__header">
+               <img
+                  src="./images/illustration-thank-you.svg"
+                  alt="Mobile payment illustration showing a phone with receipt and credit card"
+                  class="success__header-image"
+                  aria-hidden="true"
+               />
+               <p class="success__header-text">
+                  <span>You selected 0 out of 5</span>
+               </p>
+            </header>
+
+            <div class="success__content">
+               <h2 id="success-title" class="success__title">Thank you!</h2>
+               <p class="success__paragraph">
+                  We appreciate you taking the time to give a rating. If you
+                  ever need more support, don’t hesitate to get in touch!
+               </p>
+            </div>
+         </section>
+      </main>
+
+      <footer>
+         <div class="attribution">
+            Challenge by
+            <a
+               href="https://www.frontendmentor.io?ref=challenge"
+               target="_blank"
+               >Frontend Mentor</a
+            >. Coded by <a href="#">Aldomin Joseph R. Tan</a>.
+         </div>
+      </footer>
+   </body>
+</html>
