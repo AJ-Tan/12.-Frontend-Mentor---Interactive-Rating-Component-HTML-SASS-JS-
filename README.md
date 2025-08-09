@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
--  Solution URL: [Add solution URL here](https://your-solution-url.com)
--  Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  Solution URL: [GitHub Repository](https://github.com/AJ-Tan/12.-Frontend-Mentor---Interactive-Rating-Component-HTML-SASS-JS-)
+-  Live Site URL: [GitHub Pages](https://aj-tan.github.io/12.-Frontend-Mentor---Interactive-Rating-Component-HTML-SASS-JS-/)
 
 ## My process
 
